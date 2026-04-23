@@ -1,0 +1,9 @@
+node_modules/
+android/.gradle/
+android/.idea/
+android/local.properties
+ios/App/Pods/
+ios/App/App/public/
+dist/
+build/
+*.log

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schulden App</title>
+<link rel="stylesheet" href="assets/css/app.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<header class="layout">
+  <div>
+    <h1>Schulden App</h1>
+    <p class="subtitle">Personen, Schulden, Tilgungen und monatliche Raten an einem Ort</p>
+  </div>
+  <div class="header-actions">
+    <button id="accountBtn" class="ghost hidden">Mein Konto</button>
+    <button id="logoutBtn" class="ghost hidden">Logout</button>
+  </div>
+</header>
+
+<div class="layout">
+  <div id="loginBox" class="card login-card">
+    <div class="stack">
+      <div>
+        <label for="email">E-Mail</label>
+        <input id="email" type="email" placeholder="deine@email.de">
+      </div>
+      <div>
+        <label for="password">Passwort</label>
+        <input id="password" type="password" placeholder="Passwort">
+      </div>
+      <div class="auth-actions">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn" class="secondary">Neu registrieren</button>
+      </div>
+      <p class="subtitle">Falls in Supabase die E-Mail-Bestätigung aktiv ist, bestätige nach der Registrierung zuerst deine E-Mail-Adresse.</p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <div id="overviewPage">
+      <div id="dashboard" class="card"></div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Neue Person</h3>
+          <p class="subtitle">Lege zuerst eine Person an, danach kannst du Schulden und Zahlungen erfassen.</p>
+          <div class="form-grid section-gap">
+            <div>
+              <label for="personName">Name</label>
+              <input id="personName" placeholder="Zum Beispiel Max">
+            </div>
+            <div>
+              <button id="addPersonBtn">Person hinzufügen</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Übersicht</h3>
+          <p class="subtitle">In der Personenliste siehst du sofort, wer wem noch Geld schuldet.</p>
+          <div id="dashboardHint" class="empty">Noch keine Daten geladen.</div>
+        </div>
+      </div>
+
+      <div id="persons" class="grid"></div>
+    </div>
+
+    <div id="accountPage" class="hidden">
+      <div class="card">
+        <h3>Mein Konto</h3>
+        <p class="subtitle">Datenschutz, Support und Kontolöschung für die Veröffentlichung.</p>
+        <div class="account-grid section-gap">
+          <div class="metric account-card">
+            <span class="muted">Angemeldet als</span>
+            <strong id="accountEmail" class="account-email">-</strong>
+          </div>
+          <div class="account-links">
+            <button id="privacyBtn" class="ghost">Datenschutz</button>
+            <button id="supportBtn" class="ghost">Support</button>
+            <button id="accountDeletionInfoBtn" class="ghost">Kontolöschung</button>
+            <button id="requestDeletionBtn" class="danger">Kontolöschung anfordern</button>
+          </div>
+        </div>
+        <div id="accountSubPage" class="hidden section-gap">
+          <div id="accountSubPageContent" class="account-page-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="personPage" class="hidden">
+      <div class="page-toolbar">
+        <button id="backToOverviewBtn" class="ghost">← Zur Übersicht</button>
+      </div>
+      <div id="detail" class="card"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

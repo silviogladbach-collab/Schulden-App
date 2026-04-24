@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Schulden App</string>
+    <string name="title_activity_main">Schulden App</string>
+    <string name="package_name">de.silviogladbach.schuldenapp</string>
+    <string name="custom_url_scheme">de.silviogladbach.schuldenapp</string>
+</resources>

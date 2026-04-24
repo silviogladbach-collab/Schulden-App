@@ -6,7 +6,7 @@ Diese Projektbasis nutzt Capacitor, damit deine bestehende Web-App als iOS- und 
 
 - `package.json`
 - `capacitor.config.json`
-- `scripts/prepare-web.ps1`
+- `scripts/prepare-web.js`
 - `cloudflare-pages-upload`
 
 Capacitor verwendet als Web-Quelle den Ordner `cloudflare-pages-upload`.

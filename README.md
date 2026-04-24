@@ -25,8 +25,10 @@ Saubere Projektstruktur fuer die statische Cloudflare-Pages-Version.
   - Mobile Basis mit Capacitor fuer Android und iOS
 - `capacitor.config.json`
   - Grundkonfiguration fuer die mobile App
-- `scripts/prepare-web.ps1`
-  - kopiert die Web-App in den mobilen Web-Ordner
+- `ionic.config.json`
+  - Projektdatei fuer den Ionic-CLI- und Appflow-Link
+- `scripts/prepare-web.js`
+  - kopiert die Web-App plattformunabhaengig in den mobilen Web-Ordner
 - `mobile-setup.md`
   - Schritt-fuer-Schritt fuer iPhone und Android
 - `appflow-setup.md`

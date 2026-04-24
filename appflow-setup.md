@@ -7,6 +7,7 @@ Diese Datei beschreibt den praktischen Weg, wie du deine Schulden App ohne Mac Ã
 - `package.json` hat jetzt einen echten `build`-Script-Eintrag fuer Appflow.
 - `npm run build` und `npm run build:web` kopieren deine Web-App nach `cloudflare-pages-upload`.
 - `capacitor.config.json` zeigt auf `cloudflare-pages-upload` als `webDir`.
+- Das Web-Build laeuft ueber `scripts/prepare-web.js` und funktioniert deshalb auch auf Linux-Runnern von Appflow.
 
 ## Wichtiger Hinweis
 

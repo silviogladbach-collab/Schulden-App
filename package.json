@@ -5,7 +5,7 @@
   "description": "Schulden App als Web-App mit mobiler Basis über Capacitor",
   "scripts": {
     "build": "npm run build:web",
-    "build:web": "powershell -ExecutionPolicy Bypass -File scripts/prepare-web.ps1",
+    "build:web": "node scripts/prepare-web.js",
     "appflow:build": "npm run build",
     "cap:sync": "npm run build:web && npx cap sync",
     "cap:add:android": "npx cap add android",

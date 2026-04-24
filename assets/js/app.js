@@ -41,7 +41,7 @@ let currentChart = null;
 
 loginBtn.addEventListener("click", login);
 signupBtn.addEventListener("click", signUp);
-accountBtn.addEventListener("click", openAccountPage);
+accountBtn.addEventListener("click", handleAccountButtonClick);
 logoutBtn.addEventListener("click", logout);
 addPersonBtn.addEventListener("click", addPerson);
 privacyBtn.addEventListener("click", () => openAccountSubPage("privacy"));
@@ -164,6 +164,19 @@ function showApp() {
 
 function renderAccountBox() {
   accountEmail.textContent = state.currentUser && state.currentUser.email ? state.currentUser.email : "-";
+}
+
+function updateHeaderButtons() {
+  accountBtn.textContent = isAccountRoute() ? "Zur Übersicht" : "Mein Konto";
+}
+
+function handleAccountButtonClick() {
+  if (isAccountRoute()) {
+    openOverviewPage();
+    return;
+  }
+
+  openAccountPage();
 }
 
 function setActiveAccountButton(activeKind) {
@@ -681,6 +694,8 @@ function openOverviewPage() {
 
 function syncRouteFromHash() {
   if (!state.currentUser) return;
+
+  updateHeaderButtons();
 
   if (isAccountRoute()) {
     state.currentPersonId = null;

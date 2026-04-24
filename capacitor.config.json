@@ -1,6 +1,6 @@
 {
   "appId": "de.silviogladbach.schuldenapp",
-  "appName": "Schulden App",
+  "appName": "SchuldenPlan",
   "webDir": "cloudflare-pages-upload",
   "bundledWebRuntime": false
 }

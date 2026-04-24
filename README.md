@@ -1,4 +1,4 @@
-# Schulden App
+# SchuldenPlan
 
 Saubere Projektstruktur fuer die statische Cloudflare-Pages-Version.
 

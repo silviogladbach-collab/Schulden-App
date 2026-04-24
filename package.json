@@ -2,7 +2,7 @@
   "name": "schulden-app",
   "version": "1.0.0",
   "private": true,
-  "description": "Schulden App als Web-App mit mobiler Basis über Capacitor",
+  "description": "SchuldenPlan als Web-App mit mobiler Basis über Capacitor",
   "scripts": {
     "build": "npm run build:web",
     "build:web": "node scripts/prepare-web.js",

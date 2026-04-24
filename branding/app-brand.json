@@ -1,0 +1,17 @@
+{
+  "appName": "SchuldenPlan",
+  "tagline": "Personen, Schulden, Tilgungen und monatliche Raten an einem Ort",
+  "packageId": "de.silviogladbach.schuldenapp",
+  "colors": {
+    "primary": "#0C1F3F",
+    "primaryDark": "#07162E",
+    "accent": "#33D1F2",
+    "accentDark": "#1484B7",
+    "splashBackground": "#07162E"
+  },
+  "notes": [
+    "App-Name ist für Web und Android auf SchuldenPlan gesetzt.",
+    "Die Paket-ID bleibt vorerst unverändert, damit bestehende Installationen nicht brechen.",
+    "Icon- und Splash-Assets werden aus branding/icon-master.png erzeugt."
+  ]
+}

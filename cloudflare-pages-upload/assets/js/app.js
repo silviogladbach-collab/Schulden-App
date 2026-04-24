@@ -747,10 +747,10 @@ function renderAccountSubPage() {
   if (subRoute === "privacy") {
     accountSubPageContent.innerHTML = `
       <h3>Datenschutz</h3>
-      <p class="subtitle">Bitte ersetze vor der Veröffentlichung die Platzhalter mit deinen echten Daten.</p>
+      <p class="subtitle">Die wichtigsten Datenschutzdaten für die Veröffentlichung von SchuldenPlan.</p>
       <div class="metric">
         <strong>Verantwortlicher</strong>
-        <p class="muted" style="margin-top: 10px;">&lt;Dein Name oder Firmenname&gt;<br>&lt;Straße und Hausnummer&gt;<br>&lt;PLZ Ort&gt;<br>&lt;support@deinedomain.de&gt;</p>
+        <p class="muted" style="margin-top: 10px;">Gladbach<br>Werderstraße 24b<br>86159 Augsburg<br>support.schuldenplan@gmail.com</p>
       </div>
       <div class="metric">
         <strong>Verarbeitete Daten</strong>
@@ -770,7 +770,7 @@ function renderAccountSubPage() {
       <p class="subtitle">Nutze diese Infos später auch für den App Store und Google Play.</p>
       <div class="metric">
         <strong>Kontakt</strong>
-        <p class="muted" style="margin-top: 10px;">Support-E-Mail: &lt;support@deinedomain.de&gt;<br>Anbieter: &lt;Dein Name oder Firmenname&gt;</p>
+        <p class="muted" style="margin-top: 10px;">Support-E-Mail: support.schuldenplan@gmail.com<br>Anbieter: Gladbach</p>
       </div>
       <div class="metric">
         <strong>Bitte mitschicken</strong>
@@ -789,11 +789,15 @@ function renderAccountSubPage() {
     </div>
     <div class="metric">
       <strong>Löschung außerhalb der App</strong>
-      <p class="muted" style="margin-top: 10px;">Alternativ per E-Mail an: &lt;support@deinedomain.de&gt;</p>
+      <p class="muted" style="margin-top: 10px;">Alternativ per E-Mail an: support.schuldenplan@gmail.com</p>
     </div>
     <div class="metric">
       <strong>Welche Daten gelöscht werden</strong>
       <p class="muted" style="margin-top: 10px;">Benutzerkonto, Personen, Schulden, Tilgungen, Ratenzahlungen und zugehörige Notizen, soweit keine gesetzlichen Pflichten entgegenstehen.</p>
+    </div>
+    <div class="metric">
+      <strong>Bearbeitungszeit</strong>
+      <p class="muted" style="margin-top: 10px;">Kontolöschungen werden in der Regel innerhalb von 7 Tagen bearbeitet.</p>
     </div>
   `;
 }
